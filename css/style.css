@@ -1,12 +1,20 @@
 body {
-  background: black;
+  background: #0E0F10;
   color: #FFF;
   height: 100px;
+}
+p{
+  margin-bottom: 0px;
+}
+
+.sub-title-about-me {
+  font-weight: 100;
+  margin-top: 12px;
 }
 
 .sidebar {
   background: #1D1D22;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   width: 150px;
 }
@@ -42,7 +50,36 @@ body {
 }
 
 .jumbotron {
-  background: #1D1D22;
+  background: #070708;
+}
+.title-width-border {
+  border-bottom: 1px solid #25CA7F;
+  margin-bottom: 50px;
+}
+.my-location {
+  color: #25CA7F;
+  font-weight: 300;
+}
+
+.card.service {
+  background: #070708;
+  min-height: 200px;
+  text-align: center;
+}
+.card .service-icon {
+  font-size: 50px;
+  background: #0E0F10;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 33%;
+}
+.card:hover,
+.card:hover .service-icon {
+  border: 1px solid #25CA7F;
+  
 }
 
 /* TIMELINE STYLE */
@@ -76,3 +113,4 @@ ul.timeline > li:before {
   height: 20px;
   z-index: 400;
 }
+/* TIMELINE STYLE END*/
