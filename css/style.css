@@ -15,7 +15,7 @@ p{
 .sidebar {
   background: #1D1D22;
   height: 100%;
-  position: absolute;
+  position: fixed;
   width: 150px;
 }
 
@@ -32,7 +32,12 @@ p{
 .sidebar a:not(.active) {
   color: #FFF;
 }
-
+.sidebar a {
+  transition: all 1s ease-in-out;
+}
+.sidebar a span {
+  font-weight: 100;
+}
 .sidebar a.active {
   color: #25CA7F;
 }
@@ -42,19 +47,24 @@ p{
 }
 
 .sidebar a.active .bi {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .content-site {
   margin-left: 170px;
 }
 
+.tab-pane {
+  padding: 100px 0;
+}
 .jumbotron {
   background: #070708;
 }
 .title-width-border {
   border-bottom: 1px solid #25CA7F;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 .my-location {
   color: #25CA7F;
@@ -79,17 +89,32 @@ p{
 .card:hover,
 .card:hover .service-icon {
   border: 1px solid #25CA7F;
+  transition: all 0.7s ease-in-out;
   
 }
 
+.skills span {
+  display: block;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+.skills span .progress {
+  margin-top: 10px;
+  background-color: #0E0F10;
+}
+.skills .progress-bar {
+  background-color: #25CA7F;
+}
 /* TIMELINE STYLE */
 ul.timeline {
+  background-color: #070708;
   list-style-type: none;
+  padding: 30px;
   position: relative;
 }
 ul.timeline:before {
   content: ' ';
-  background: #d4d9df;
+  background: #25CA7F;
   display: inline-block;
   position: absolute;
   left: 29px;
@@ -103,14 +128,21 @@ ul.timeline > li {
 }
 ul.timeline > li:before {
   content: ' ';
-  background: white;
+  background: #070708;
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid #22c0e8;
+  border: 3px solid #25CA7F;
   left: 20px;
   width: 20px;
   height: 20px;
   z-index: 400;
+}
+ul.timeline a {
+  color: #25CA7F;
+  text-decoration: none;
+}
+ul.timeline p {
+  margin-top: 10px;
 }
 /* TIMELINE STYLE END*/
